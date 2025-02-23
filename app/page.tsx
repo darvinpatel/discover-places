@@ -1,6 +1,6 @@
 "use client"
 import Hero from '@/components/Hero'
-// import PlaceList from '@/components/PlaceList'
+import PlaceList from '@/components/PlaceList'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
@@ -22,8 +22,8 @@ export default function Home() {
   return (
     <div>
         <Hero userInput={(value:string)=>getPlaceList(value)} />
-{/* 
-       {placeList? <PlaceList placeList={placeList} />:null} */}
+
+       {placeList? <PlaceList placeList={placeList} />:null}
     </div>
   )
 }
