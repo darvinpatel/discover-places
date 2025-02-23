@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Skelton() {
+function Skeleton() {
   return (
     <div>
         <div className="shadow-md
@@ -23,4 +23,4 @@ function Skelton() {
   )
 }
 
-export default Skelton
+export default Skeleton

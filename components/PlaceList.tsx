@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PlaceItemCard from "./PlaceItemCard";
-// import SideDrawer from "./SideDrawer";
-import Skelton from "./Skelton";
+import SideDrawer from "./SideDrawer";
+import Skeleton from "./Skeleton";
 
 function PlaceList({ placeList }: any) {
   const [selectedPlace, setSelectedPlace] = useState<any>([]);
@@ -30,10 +30,10 @@ function PlaceList({ placeList }: any) {
       </div>
       {selectedPlace?.name ? (
         <div className="fixed top-0 right-0 z-20">
-          {/* <SideDrawer
+          <SideDrawer
             place={selectedPlace}
             close={() => setSelectedPlace([])}
-          /> */}
+          />
         </div>
       ) : null}
 
@@ -45,7 +45,7 @@ function PlaceList({ placeList }: any) {
         gap-5"
       >
         {[1,2,3,4,5,6,7].map((item,index)=>(
-            <Skelton key={index}/>
+            <Skeleton key={index}/>
         ))}
         </div>:null}
         
